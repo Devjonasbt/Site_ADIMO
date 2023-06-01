@@ -1,0 +1,61 @@
+main{
+    padding: 5rem;
+    background: rgb(179,219,252);
+    background: linear-gradient(180deg, rgba(179,219,252,1) 0%, rgba(194,227,254,1) 50%, rgba(210,233,252,1) 100%);
+}
+
+.texto{
+    background-color: white;
+}
+
+.historia{
+    border: 2px solid;
+    padding: 2rem;
+    border-color: #1344e1 transparent transparent #1344e1;
+}
+
+.historia h2{
+    margin-bottom: 5vh;
+}
+
+.historia p{
+    margin: 1rem 0;
+}
+
+.historia p span{
+    margin-left: 2rem;
+}
+
+.mvv{
+    border: 2px solid;
+    padding: 2rem;
+    border-color: transparent #1344e1 #1344e1 transparent;
+}
+
+.mvv h3{
+    margin: 1rem 0;
+    font-size: 1.5rem;
+    color: #1344e1;
+}
+
+.mvv p span{
+    margin-left: 2rem;
+}
+
+.miviva p, h4{
+    margin-left: 1rem;
+}
+
+.miviva h4{
+    margin: 1rem 0;
+    font-size: 1.1rem;
+    color: #5577e7;
+}
+
+.valores{
+    margin-left: 1rem;
+}
+
+.valores p{
+    margin-left: 1rem;
+}

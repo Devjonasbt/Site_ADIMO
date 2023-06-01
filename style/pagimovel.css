@@ -1,0 +1,115 @@
+section {
+    margin: 10vh 10vw;
+}
+input{
+    cursor: pointer;
+}
+.favorito{
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.favorito-checkbox{
+    display: none;
+}
+
+.favorito-label{
+    position: relative;
+}
+
+.favorito-vazio, .favorito-cheio{
+    position: absolute;
+    top: 0;
+    left: 0;
+    max-width: 1.5rem;
+    cursor: pointer;
+}
+
+.favorito-cheio{
+    display: none;
+}
+
+.favorito-checkbox:checked + .favorito-label .favorito-cheio{
+    display: block;
+}
+
+.info-icone {
+    margin-top: vh;
+}
+
+.info-icone ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    list-style: none;
+}
+
+.info-icone ul li img{
+    max-width: 2rem;
+}
+
+.comprar {
+    margin-top: 5vh;
+    padding: 1rem;
+
+    border: 1px solid black;
+    border-radius: 20px;
+
+    background-color: rgb(240, 240, 240);
+}
+
+.venda, .condominio, .iptu {
+    margin: 7px 0;
+
+    display: flex;
+    justify-content: space-between;   
+}
+
+.comprar p span {
+    font-weight: bold;
+}
+
+.botoes {
+    display: flex;
+    justify-content: center;
+}
+
+.botoes input {
+    border-radius: 5px;
+
+    padding: 5px;
+    margin: 0 5rem;
+
+    color: white;
+    background-color: #1344e1;
+}
+
+.sobre {
+    margin-top: 5vh;
+}
+
+.sobre p {
+    margin-top: 0.5rem;
+    margin-left: 1rem;
+}
+
+.proximidades {
+    margin-top: 5vh;
+}
+
+.proximidades h3 {
+    margin-bottom: 1rem;
+}
+
+.proximidades ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    list-style: none;
+}
+
+.proximidades ul li {
+    margin: 1rem;
+}

@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="desciption" content="ADIMO uma imobiliaria onde te ajudar é nossa obrigação">
+        <link rel="stylesheet" href="../style.css">
+        <link rel="stylesheet" href="../style/style_pagform.css">
+        <link rel="shortcut icon" href="../assets/icon/adimo-1.png" type="image/x-icon">
+        
+        <title>ADIMO Imobiliária</title>
+    </head>
+    <body>
+        <header>
+            <a href="../pages/index_quemsomos.html"><img src="../assets/icon/adimo-1.png" alt="Logo ADIMO"></a>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Início</a></li>
+                    <li><a href="../pages/index-compra.html">Comprar</a></li>
+                    <li><a href="../pages/index-alugar.html">Alugar</a></li>
+                    <li><a href="../pages/index-financiar.html">Financiar</a></li>
+                    <li><a href="../pages/index_agendar.html">Agendamento</a></li>
+                </ul>
+
+                <div class="menu">
+                    <input type="checkbox" name="menu" id="menu" class="menu-checkbox">
+                    <label for="menu" class="menu-label">
+                        <img src="../assets/Icones/icons8-menu.png" alt="Menu">
+                    </label>
+                    <ul class="lista-menu">
+                        <li><a href="../index.html">Inicio</a></li>
+                        <li><a href="../pages/index-compra.html">Comprar</a></li>
+                        <li><a href="../pages/index-alugar.html">Alugar</a></li>
+                        <li><a href="../pages/index-financiar.html">Financiar</a></li>
+                        <li><a href="../pages/index_agendar.html">Agendamento</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="log">
+                <a href="../pages/index_login.html"><img src="../assets/img/perfil2.png" alt="Foto perfil"></a>
+            </div>
+        </header>
+        <main>
+            <div class="texto-inicio">
+                <h2>
+                    Preencha o formulário da sua proposta
+                </h2>
+            </div>
+            <form>
+                <div>
+                    <hr>
+                    <h2>Dados Pessoais</h2>
+                    
+                    <div class="row">
+                        <div class="col-md-6">
+                            <input type="text" id="nome" name="nome" class="form-control" placeholder="Nome Completo" required>
+                        </div>
+                        <div class="col-md-6">
+                            <input type="email" id="email" name="email" class="form-control" placeholder="E-mail" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <input type="text" id="telefone" name="telefone" class="form-control" placeholder="Telefone Residencial" required>
+                        </div>
+                        <div class="col-md-4">
+                            <input type="text" id="telComercial" name="telComercial" class="form-control" placeholder="Telefone Comercial" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <input type="text" id="endereco" name="endereco" class="form-control" placeholder="Endereço Atual" required>
+                        </div>
+                        <div class="col-md-1">
+                            <input type="text" id="numero" name="numero" class="form-control" placeholder="Número" required>
+                        </div>
+                        <div class="col-md-5">
+                            <input type="text" id="complemento" name="complemento" class="form-control" placeholder="Complemento" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-5">
+                            <input type="text" id="bairro" name="bairro" class="form-control" placeholder="Bairro" required>
+                        </div>
+                        <div class="col-md-3">
+                            <input type="text" id="cidade" name="cidade" class="form-control" placeholder="Cidade" required>
+                        </div>
+                        <div class="col-md-2">
+                            <select id="estado" name="estado" class="form-control" required>
+                            <option value="">Estado</option>
+                            <option value="AC">Acre</option>
+                            <option value="AL">Alagoas</option>
+                            <option value="AP">Amapá</option>
+                            <option value="AM">Amazonas</option>
+                            <option value="BA">Bahia</option>
+                            <option value="CE">Ceará</option>
+                            <option value="DF">Distrito Federal</option>
+                            <option value="ES">Espírito Santo</option>
+                            <option value="GO">Goiás</option>
+                            <option value="MA">Maranhão</option>
+                            <option value="MT">Mato Grosso</option>
+                            <option value="MS">Mato Grosso do Sul</option>
+                            <option value="MG">Minas Gerais</option>
+                            <option value="PA">Pará</option>
+                            <option value="PB">Paraíba</option>
+                            <option value="PR">Paraná</option>
+                            <option value="PE">Pernambuco</option>
+                            <option value="PI">Piauí</option>
+                            <option value="RJ">Rio de Janeiro</option>
+                            <option value="RN">Rio Grande do Norte</option>
+                            <option value="RS">Rio Grande do Sul</option>
+                            <option value="RO">Rondônia</option>
+                            <option value="RR">Roraima</option>
+                            <option value="SC">Santa Catarina</option>
+                            <option value="SP">São Paulo</option>
+                            <option value="SE">Sergipe</option>
+                            <option value="TO">Tocantins</option>
+                            </select>
+                        </div>
+                        <div class="col-sm-2">
+                            <input type="text" id="CEP" name="CEP" class="form-control" placeholder="CEP" required>
+                        </div>
+                    </div>
+                </div>      
+                <hr>
+                <div>
+                    <h2>Proposta</h2>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <input type="text" id="valor" name="valor" class="form-control" placeholder="Valor que deseja (R$)" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3">
+                            <textarea id="motivo" name="motivo" rows="3" cols="90" placeholder="Motivo:"></textarea>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-2">
+                            <select id="pagamento" name="pagamennto" class="form-control" required>
+                            <option value="">Pagamento</option>
+                            <option value="AVista">Á vista</option>
+                            <option value="parcela12x">Parcela 12x</option>
+                            <option value="parcela24x">Parcela 24x</option>
+                            <option value="parcela36x">Parcela 32x</option>
+                            <option value="parcela48x">Parcela 48x</option>
+                            <option value="cheque">Cheque</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="privacidade">
+                        <input type="checkbox" id="privacy-checkbox" class="form-check-input">
+                        
+                        <label for="privacy-checkbox" class="form-check-label">Ao informar meus dados, concordo com a <a href="#">Política de Privacidade</a></label>
+                    </div>
+                    <div class="enviar">
+                        <a href="./index_cliente.html">
+                            <button type="button" class="btn-enviar">ENVIAR</button>
+                        </a>
+                    </div>
+                </div>
+            </form>
+        </main>
+        <footer>
+            <div class="footer-content">
+                <img class="footer-img" src="../assets/icon/adimo-icon.svg" alt="Logo">
+
+                
+                <ul>
+                    <p>Adimo Imobiliária</p>
+                    <li>
+                        <a href="../index.html">Início</a>
+                    </li>
+                    <li>
+                        <a href="#">Quem Somos</a>
+                    </li>
+                    <li>
+                        <a href="./index-compra.html">Comprar</a>
+                    </li>
+                    <li>
+                        <a href="./index-compra.html">Alugar</a>
+                    </li>
+                    <li>
+                        <a href="./index-financiar.html">Financiar</a>
+                    </li>
+                    <li>
+                        <a href="./index_anuniar.html">Anunciar</a>
+                    </li>
+                </ul>
+
+                <ul>
+                    <li>
+                        <img src="../assets/icon/icons8-instagram.svg" alt="Icone Instagram">
+                        <a href="">Instagram</a>
+                    </li>
+                    <li>
+                        <img src="../assets/icon/icons8-facebook-novo.svg" alt="Icone Facebook">
+                        <a href="">Facebook</a>
+                    </li>
+                    <li>
+                        <img src="../assets/icon/icons8-linkedin.svg" alt="Icone Linkedin">
+                        <a href="">Linkedin</a>
+                    </li>
+                    <li>
+                        <img src="../assets/icon/icons8-twitter.svg" alt="Icone Twitter">
+                        <a href="">Twitter</a>
+                    </li>
+                </ul>
+                </div>
+                
+                <div class="footer-copyright">
+                    &copy; 2023 ADIMO Imobiliária. Todos os direitos reservados.
+                </div>    
+            </div>
+        </footer> 
+    </body>
+</html>

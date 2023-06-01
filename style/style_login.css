@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: rgba(182, 199, 211, 0.336);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login{
+    margin: 5vh 0;
+    background: rgba(116,197,255, 1);
+    border-radius: 20px;
+    max-width: 550px;
+    padding: 15px 40px;
+    box-shadow: 3px 3px 3px #000000af;
+    position: relative;
+}
+@media(max-width:600px){
+    .login{
+        max-width: 400px;
+    }
+}
+
+.x{
+    background-color: red;
+    width: 20px;
+    border-radius: 20px;
+    margin-right: 1rem;
+    margin-top: 1rem;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.a{
+    color: brown;
+    text-decoration: none;
+}
+.a-x{
+    text-decoration: none;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+}
+
+.login h1{
+    margin-bottom: 45px;
+    font-size: 30px;
+    color: white;
+    text-align: center;
+}
+
+.termo-de-condicao{
+    font-size: 12px;
+    padding-bottom: 65px;
+}
+
+.box-user{
+    position: relative;
+}
+
+.box-user input{
+    width: 100%;
+    padding: 10px 0;
+    outline: none;
+    border: 0;
+    background: transparent;
+    border-bottom: 1px solid #fff;
+    color: #fff;
+    font-size: 16px;
+    margin-bottom: 60px;
+    transition:all .55s ease-out;
+}
+
+.box-user label{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    color: #fff;
+    font-size: 16px;
+    pointer-events: none;
+    transition:all .5s ease-out;
+    border-radius: 0;
+}
+
+.login .box-user input:focus + label,
+.login .box-user input:valid + label{
+    top: -24px;
+    left: 0;
+    color: #ffffff;
+    font-size: 20px;
+}
+
+input:focus{
+    border-bottom: 2px solid #ffffff;
+    box-shadow: 0 1px 0 0 #ffffff;
+}
+
+.btn-login{
+    display: flex;
+    justify-content: center;
+}
+
+.btn-login button{
+    padding: 1rem;
+    margin: 2rem;
+    width: 130px;
+    background-color: #565656;
+    border: 2px solid #212121;
+    color: #fff;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.btn-login button:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+.mais-opcoes{
+    text-align: center;
+}

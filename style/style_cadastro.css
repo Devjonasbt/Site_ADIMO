@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cadastro{
+    margin: 5vh;
+    background: rgba(116,197,255, 1);
+    padding: 2rem;
+    border-radius: 20px;
+    position: relative;
+}
+
+.x{
+    background-color: red;
+    width: 20px;
+    border-radius: 20px;
+    margin-right: 1rem;
+    margin-top: 1rem;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.a-x{
+    text-decoration: none;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+}
+
+h1{
+    color: white;
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.dados input{
+    padding: 8px 5px;
+    margin: 0.5rem 0;
+    outline: none;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.2);
+    border: 2px solid rgb(73, 79, 107);
+    color: white;
+    width: 100%;
+}
+
+.dados input::placeholder{
+    color: white;
+}
+
+.box-select-genero{
+    color: white;
+}
+
+.box-select-perfil{
+    color: white;
+    margin: 1rem 0;
+}
+
+.enviar{
+    display: flex;
+    justify-content: center;
+}
+
+.enviar button{
+    width:80%;
+    height: 7vh;
+    background-color: #565656;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    margin-top: 15px;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.enviar button:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+.login{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+}

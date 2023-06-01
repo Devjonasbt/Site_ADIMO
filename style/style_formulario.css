@@ -1,0 +1,66 @@
+body{
+    background-color: rgba(182, 199, 211, 0.164);
+}
+.formulario{
+    background-color: rgb(240, 240, 240);
+    margin: 5rem;
+    padding: 2rem;
+}
+
+.formulario h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.dados, .proposta{
+    margin-left: 1rem;
+}
+
+.dado{
+    margin: 0.7rem 0;
+}
+
+.dado p{
+    margin-left: 0.5rem;
+    text-align: justify;
+}
+
+.formulario h3{
+    margin-top: 2rem;
+}
+
+.avaliar{
+    margin: 0 10%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.avaliar input{
+    padding: 1rem;
+    color: white;
+    border: 1px solid black;
+    border-radius: 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-top: 1.5rem;
+}
+
+.avaliar input:hover{
+    transform: scale(1.02);
+    box-shadow: 1px 1px 1px black;
+    transition: 0.5;
+}
+
+.btn-aprovar{
+    background-color: #1344e1;
+}
+
+.btn-reprovar{
+    background-color: rgb(214, 25, 25);
+}
+
+.btn-editar{
+    background-color: rgb(72, 72, 206);
+}

@@ -1,0 +1,795 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+/*Geral*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/*Header*/
+header{
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 5rem;
+    background: rgb(116,197,255);
+    background: linear-gradient(180deg, rgba(116,197,255,1) 0%, rgba(158,214,255,1) 50%, rgba(179,219,252,1) 100%);
+}
+
+header a img{
+    width: 5rem;
+    margin: 5px;
+    margin-top: 10px;
+}
+
+header nav ul{
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li{
+   padding: 2rem;
+}
+
+header nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+header nav ul li:hover{
+    transform: scale(1.2);
+    transition: 0.5s;
+}
+
+header nav img{
+    display: none;
+}
+
+header .menu{
+    display: none;
+    
+}
+
+@media screen and (max-width: 1000px){
+    header nav ul{
+        display: none;
+    }
+
+    header nav ul li{
+        padding: 0;
+    }
+
+    header nav img{
+        display: block;
+        max-width: 10vh;
+    }
+
+    header .menu{
+        display: flex;
+        
+        
+    }
+    #img{
+        cursor: pointer;
+    }
+    .lista-menu{
+        position: absolute;
+        padding: 0.5rem;
+        font-size: 1rem;
+        background-color: white;
+        border: 1px solid black;
+    }
+
+    .lista-menu li{
+        margin: 0.5rem;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .lista-menu li a{
+        color: black;
+        margin: 0;
+        padding: 0;
+    }
+
+
+    .menu-checkbox{
+        display: none;
+    }
+
+    .menu-checkbox:checked ~ .lista-menu{
+        display: block;
+        z-index: 1;
+    }
+}
+
+.log{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.log img{
+    width: 50px;
+    margin-right: 1rem;
+}
+
+.login{
+    margin: 1rem;
+    padding: 5px;
+    color: #ffffff;
+    background-color: #1B59F2;
+    border: none;
+    border-radius: 10px;
+}
+
+.login:hover{
+    background-color: #1b58f277;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/*Primeira parte - Inicio*/
+.inicio{
+    width: 100%;
+    height: 100vh;
+    background-image: url(./assets/img_Imovel/iStock-507755522.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.pesquisa{
+    background-color: white;
+    margin: 0 auto;
+    padding: 3rem;
+    width: 50vw;
+    height: max-content;
+    border-radius: 20px;
+    box-shadow: 1px 1px 1px black;
+}
+
+#search-bar{
+    margin: 0 auto;
+    width: 100%;
+    height: 45px;
+    padding: 0 20px;
+    font-size:20px;
+    font-family: 'Franklin Gothic Medium';
+    color: rgb(20, 6, 6);
+    border: 1px solid;
+}
+
+.search-icon{
+    position: relative;
+    float: right;
+    width: 25px;
+    height: 30px;
+    top: -38px;
+    right: 10px;
+}
+
+.inicio span {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+/*Sessão imóveis ideais*/
+.imv-estilo-vida{
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.imv-estilo-vida h2{
+    font-weight: bold;
+    font-size: 2.5rem;
+}
+
+.imv-estilo-vida-content{
+    margin-top: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    justify-content: center;
+}
+
+.imv {
+    width: 20rem;
+    height: 25rem;
+    margin: 1rem;
+    border-radius: 20px;
+    transition: all 1s;
+}
+
+.imv:hover {
+    border: 1px solid;
+    border-color: transparent black black transparent;
+    box-shadow: 1px 1px 1px black;
+    transform: scale(1.05);
+}
+
+
+.imv a{
+    text-decoration: none;
+    color: black;
+}
+.imv img{
+    border-radius: 20px 20px 0 0;
+    width: 100%;
+    height: 60%;
+}
+
+
+/*Sessão gif*/
+.sec-gif{
+    display: flex;
+}
+
+.gif{
+    height: 70vh;
+}
+
+.txt-sec-gif h2{
+    margin-top: 2rem;
+    margin-left: 10px;
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    color: #1B59F2;
+}
+
+.txt-sec-gif p{
+    font-size: 1.5rem;
+    margin: 10px;
+    text-align: center;
+}
+
+/*video*/
+.video{
+    display: flex;
+    margin:0 auto;
+    width: 90%;
+    height: 650px;
+    padding-top: 50px;
+    
+    
+}
+.gif{
+    height: 500px;
+    display: flex;
+    border-radius: 55px;
+    justify-content:flex-end;
+    padding-left: 25px;
+    align-items: center;
+    box-shadow: 5px 5px 5px gray;
+    cursor: pointer;
+}
+.h2-p{
+    margin-left: 10px;
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    color: #1B59F2;
+}
+.p-video{
+    margin-left: 15px;
+    
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    font-size: 26px;
+    color: #072161; 
+}
+.a{
+    color: #582626;
+    margin-left: 25px;
+}
+
+/*carrossel com slider linha 90*/
+.div-slider{
+    width: 100%;
+    height: 900px;
+    margin-top: 100px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; 
+}
+
+.div-slider h2{
+    margin:auto;
+    width: 90%;
+    font-size: 30px;
+    justify-content: center;
+    margin-bottom: 9vh;
+}
+
+* {box-sizing: border-box}
+/*bloquinhos linhas 65 a 119*/
+.mySlides {display: none;}
+
+
+/*linha 94*/
+.slides-container {
+    position: relative;
+    height: 705px;
+    max-width: 1000px;
+    margin:0 auto;
+}
+/*ira deixar as iamgens no centro linhas 97, 103, 109, 115, 121*/
+.slider-imagem {
+   
+    margin: 0 auto;
+    height: 40rem;
+    vertical-align: middle;
+    border-radius: 3%;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.829));
+
+    
+}
+/*< > onde o usuario ira proxima foto e voltar linha 125,126 */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: 28px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    background-color: #a2b0da73;
+}
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+/*efeito*/
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.712);
+    color: #f2f2f2;
+}
+/*texto dentro da imagem aparti da linha 98*/
+.text {
+    filter: drop-shadow(0px 4px 4px rgba(100, 99, 99, 0.829));
+    -webkit-text-stroke:1.5px; 
+    color: #ffffff;
+    font-size: 30px;
+    padding: 8px 12px;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    top:550px;
+}
+/*span linha 132 ha 136*/
+.alin{
+    width: 98%;
+}
+.dot {
+  
+    cursor: pointer;
+    height: 12px;
+    width: 12px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+/*efeito dos span*/
+.active, .dot:hover {
+  background-color: #717171;
+}
+/* animacao quando mudar de iamgem*/
+.fade {
+  animation-name: fade;
+  animation-duration: 1.0s;
+}
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+/*fim do slider carrossel*/
+
+.img-fundo{
+    position: relative;
+    overflow: hidden;
+}
+
+.img-fundo::before{
+    content: "";
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-image: url("assets/img/city-2250533_1280.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    filter: saturate(0);
+    opacity: 0.2;
+    z-index: -1;
+    top: 0;
+    left: 0;
+}
+
+.imoveis-procurados{
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.imoveis-procurados h2{
+    font-size: 30px;
+}
+
+.imoveis-procurados-content{
+    margin-top: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.imv-procurados{
+    width: 20rem;
+    height: max-content;
+    margin: 1rem;
+    border-radius: 20px;
+    transition: all 1s;
+    background-color: #ffffff;
+}
+
+.img-imv-procurados{
+    border-radius: 20px;
+    width: 100%;
+    height: 60%;
+}
+
+.imv-procurados p{
+    display: flex;
+    justify-content: center;
+    padding: 0.5rem;
+}
+
+.imv-procurados p span{
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+.imv-procurados:hover{
+    border: 1px solid;
+    border-color: transparent black black transparent;
+    box-shadow: 1px 1px 1px black;
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+/*duvidas-checkbox*/
+.duvidas{
+    margin-top: 5rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    margin-bottom: 5rem;
+}
+
+.duvidas h2{
+    font-size: 30px;
+    margin-bottom: 1rem;
+    border-bottom: 3px solid #1344e1;
+}
+
+.input-box{
+    display: none;
+}
+
+.setas{
+    width: 45px;
+    height: 25px;
+    margin:0 auto;
+    position: absolute;
+    right: 0;  
+}
+
+.div-duvidas{
+    width: 85%;
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+
+.border-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.5rem 0;
+    border: 1px solid #000000;
+    padding: 1rem;
+    position: relative;
+    background-color: #ffffff;
+}
+
+.p-label{
+    width: 80%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    margin:0 auto;
+    margin-top: calc(1rem / 2);
+}
+
+.input-box:checked + .checkbox-item .p-label{
+    display: flex;
+}
+.text-a{
+    padding-top: 50px;
+    background-color: #c0baba4b;
+    margin:0 auto;
+    width: 80%;
+    padding-left: 30px;
+    padding-right: 30px;
+    height: 800px;
+    overflow-y: scroll;
+}
+/*
+
+/*uma div com varias figure de imagem e conteudo linha 62*/
+.style-vida{
+    width: 100%;
+    margin-top:20px;
+    font-size: 30px;
+    display: flex;
+    margin:0 auto;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+/*figure com imagem e conteudos linas 63, 69, 75, 81*/
+.fig-img, .fig-img-1 {
+    width: 250px;
+    margin-left: 50px;
+    height: 450px;
+    padding:0; 
+}
+
+/*define as imagem de imovel linas 64, 70, 76, 82*/
+.img-fig-1{
+   
+    width: 223px;
+    height: 205px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.829));
+    border-radius: 10px;
+}
+/*Efeito quando ouver uma ação*/
+.img-fig-1:hover{
+    box-shadow: 5px 5px 5px gray;
+    transform: scale(1.05);
+}
+/*conteudo das imagem*/
+figcaption{
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.section-prox{   
+    margin: 0 auto;
+    height: 950px;
+    width: 100%;
+    background-image: url(./assets/img/Novidade-no-site-da-Central-1.png); 
+    background-position: 30% 45%;
+    background-color: black;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+/*paragrafo linha 222*/
+.parag{
+    display: flex;
+    padding-top: 5%;
+    margin: 0 auto;
+    font-size: 45px;
+    color: #fff;
+    justify-content: center;
+    width: 100%;
+    flex-wrap: wrap;
+}
+/*bloco linha 223*/
+.class-div{
+    justify-content: center;
+    display: flex;
+    height: 60%;
+}
+/*aqui tera dois blocos lina 224*/
+.bloquinho-vontagem, .bloquinho-desv{
+    margin-top: 55px;
+    margin-left: 20px;
+    
+    width: 400px;
+    background-color: transparent ;
+    border:2px solid #d8cece;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.829));
+}
+/*efeito*/
+.bloquinho-vontagem:hover, .bloquinho-desv:hover{
+    box-shadow: 5px 5px 5px gray;
+    transform: scale(1.05);
+    background-color: #d14f03;/*#72f159 verde*/
+    cursor: pointer;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.829));
+}
+.p-div{
+    font-size: 25px;
+    padding-top: 50px;
+    width: 180px;
+    color: #fff;
+    margin: 0 auto;
+    justify-content: center;
+}
+/*lista linhas 226, 241*/
+.ul{
+    padding-top: 45px;
+    color:#fff;
+    width: 25vw;
+    list-style: none;
+    align-items: center;
+    margin: 0 auto;
+    justify-content: center;
+    
+}
+.h2{
+    justify-content: center;
+    display: flex;
+ 
+}
+/*itens */
+.li{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-top: 1.5ch;
+    display: list-item;
+    text-align: -webkit-match-parent;
+    display: flex;
+    justify-content: center;
+}
+#adimo{
+    color: #f3600b;
+    margin-left: 5px;
+    
+}
+footer {
+    bottom: 0;
+    width: 100%;
+    padding-top: 4vh;
+
+    background-color:#f0f0f0;
+    border-top: 10px solid #1344e1;
+}
+
+/*class pai linha 261*/
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 15%;
+}
+.footer-content img {
+    width: 150px;
+}
+
+footer ul{
+    margin-bottom: 1rem;
+}
+
+footer li {
+    list-style: none;
+    text-indent: 2vw;
+}
+
+footer a {
+    text-decoration: none;
+    color: black;
+}
+
+.footer-content p {
+    font-weight: bold;
+}
+
+.footer-content ul li img {
+    width: 20px;
+}
+
+.footer-content ul li {
+    display: flex;
+}
+
+.footer-copyright {
+    border-top: 3px solid black;
+    text-align: center;
+    height: 30px;
+    padding: 0.5rem;
+}
+
+@media(max-width:1215px){
+   .fig-img-1{
+    display: none;
+   }
+  .p-video{
+    font-size: 20px;
+  }
+  .h2-p{
+    font-size: 25px;
+  }
+ 
+ 
+}
+@media(max-width:914px){
+    .fig-img-1{
+        display: block;
+    }
+    .video-section{
+        display: none;
+    }
+    
+    .bloquinho-vontagem{
+        width: 350px;
+        
+    }
+    .parag{
+        font-size: 28px;
+    }
+    .bloquinho-desv{ 
+        display: none;
+    }
+    .ul{
+        width: 100%;
+    }
+    .pesquisa{
+        width: 70%;
+    }
+}
+@media(max-width:600px){
+    .video{
+       width: 100%;
+
+    }
+    .gif{
+        width: 90%;
+    }
+    .text{
+        display: none;
+    }
+    span{
+       font-size: 18px;
+    }
+    .pesquisa{
+        width: 90%;
+    }
+    .text-a{
+        width: 95%;
+    }
+    .imv-estilo-vida h2{
+        font-size: 30px;
+    }
+    .footer-img{
+        display: none;
+    }
+}

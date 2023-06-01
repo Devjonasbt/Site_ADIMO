@@ -1,0 +1,58 @@
+.title{
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 2rem;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+}
+
+.bancos{
+    margin: 5vh 10vw 5vh 10vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center; 
+}
+
+.banco{
+    width: 20vw;
+    margin: 1.5rem;
+    border: 1px solid black;
+    border-radius: 20px;
+    transition: 1s;
+}
+
+.banco:hover{
+    transform: rotateY(360deg);
+}
+
+.banco img{
+    border-radius: 20px 20px 0 0;
+}
+
+.Simular{
+    padding-top: .2rem;
+    padding-bottom: .1rem;
+    padding-left: .6rem;
+    padding-right: .6rem;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #1B59F2;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem auto;
+}
+
+.Simular:hover{
+    background-color: #ffff;
+    color: #1B59F2;
+}
